@@ -370,8 +370,8 @@ h3 {
 }
 
 *:focus {
-  outline: 2px dotted linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
-  outline-offset: 4px;
+  outline: none;
+  outline-offset: none;
 }
 
 html {
