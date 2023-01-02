@@ -1,0 +1,17 @@
+body
+{
+    font-family: $main-font-family;
+    @include title (1.6rem, 1.62, -0.25px, $text-color, 400);
+}
+h1
+{
+    @include title (5.6rem, 1.14, -1px, $title-color, 100);
+}
+h2
+{
+    @include title (4rem, 1.6, -0.7px, $title-color, 100);
+}
+h3
+{
+    @include title (1.6rem, 1.25, -0.29px, $title-color, 100)
+}

@@ -1,0 +1,38 @@
+/* public-sans-100 - latin */
+@font-face {
+     font-family: 'Public Sans';
+     font-style: normal;
+     font-weight: 100;
+     src: local(''),
+          url('../fonts/public-sans-v14-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/public-sans-v14-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   }
+   /* public-sans-regular - latin */
+   @font-face {
+     font-family: 'Public Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: local(''),
+          url('../fonts/public-sans-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/public-sans-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   }
+   /* public-sans-500 - latin */
+   @font-face {
+     font-family: 'Public Sans';
+     font-style: normal;
+     font-weight: 500;
+     src: local(''),
+          url('../fonts/public-sans-v14-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/public-sans-v14-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   }
+
+     // 
+
+     $main-bg-color: #F2F2F2;
+     $linear-gradient: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+     $title-color:#2D314D;
+     $text-color: #9597A5;
+     $light-white: #ffffff;
+     $about-bg-color: #F4F5F7;
+     $main-font-family: 'Public Sans', Arial, sans-serif;
+

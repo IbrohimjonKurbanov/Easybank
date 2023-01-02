@@ -1,0 +1,54 @@
+*, ::after, ::before
+{
+    @include wwwPm;
+    transition:  0.3s linear;
+}
+*:focus
+{
+    outline: 2px dotted $linear-gradient;
+    outline-offset: 4px;
+}
+html
+{
+    overflow-x: hidden;
+    font-size: 62.5%;
+    height: 100%;
+}
+ul, ol
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+img
+{
+    display: flex;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $main-bg-color;   
+    overflow-x: hidden;
+}
+h1,
+h2,
+h3, 
+h4,
+h5,
+h6
+{
+    margin: 0;
+}
+.container
+{
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}

@@ -1,0 +1,116 @@
+// HEADER
+.header
+{
+    background-color: $light-white;
+    .container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+      .sitenav__list {
+        display: flex;
+        gap: 3rem;
+      }
+      .sitenav__item {
+        position: relative;
+      }
+      .sitenav__link {
+        display: block;
+        align-items: center;
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
+        font-size: 1.4rem;
+        line-height: 1.14285714;
+        color: $text-color;
+        transition: 0.3s;
+      }
+      .sitenav__link:hover {
+        color: #2D314D;
+      }
+      .sitenav__link::before {
+        content: '';
+        background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+        height: 4px;
+        width: 0%;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        transition: width 0.3s;
+      }
+      .sitenav__link:hover::before {
+        width: 100%;
+      }
+      #menu
+      {
+        display: none;
+        color: #000000;
+        font-size: 2.5rem;
+        cursor: pointer;
+      }
+      .wrap
+      {
+        transition: 1s;
+      }
+      .header__toggle-btn
+      {
+        display: none;
+        background-color: transparent;
+        border: none;
+      }
+      @include responsive (tablet)
+      {
+        padding-top: 2.2rem;
+        padding-bottom: 2.2rem;
+      }
+      
+      @include responsive (tablet)
+      {
+       #menu
+       {
+        display: block;
+       }
+       .btn 
+       {
+        display: none;
+       }
+       .sitenav {
+        position: absolute;
+        width: 100%;
+        left: 0; right: 0;  top: 7rem; bottom: 0;
+        padding: 2.4rem 2.4rem;
+        display: none;
+        
+      }
+      .sitenav__list {
+        background: $light-white;
+        padding: 3.2rem 0;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        gap: 2.4rem;
+        transition: all 0.3s;
+      }
+      .sitenav__link {
+        padding: 0;
+        font-size: 1.8rem;
+        color: $title-color;
+      }
+      .sitenav__link:hover::before {
+        top: 2.5rem;
+      }
+      .header__toggle-btn
+      {
+        display: block;
+      }
+      }
+}
+     .sitenav.show-nav
+     {
+        display: block;
+     }
+     .fa-times
+     {
+        transform: rotate(180deg);
+     }
