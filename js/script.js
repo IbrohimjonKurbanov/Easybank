@@ -6,7 +6,6 @@ const overlay = document.querySelector('.overlay')
 headerToggleBtn.addEventListener('click', () => {
   siteNav.classList.toggle('show-nav')
   overlay.classList.toggle('show-nav')
-  
   menu.classList.toggle('fa-times');
 })
 

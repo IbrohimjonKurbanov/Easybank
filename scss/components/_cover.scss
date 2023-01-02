@@ -1,4 +1,7 @@
 // COVER
+    @include responsive (tablet)
+    {
+
     .overlay
     {
         width: 100%;
@@ -8,10 +11,10 @@
         left: 0;
         bottom: 0;
         z-index: -1;
-        display: none;
+       display: none;
     }
     .overlay.show-nav 
     {
         display: block;
     }
-
+    }
