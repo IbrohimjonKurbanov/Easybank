@@ -1,7 +1,6 @@
 *, ::after, ::before
 {
     @include wwwPm;
-    transition:  0.3s linear;
 }
 *:focus
 {
