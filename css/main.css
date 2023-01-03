@@ -366,7 +366,6 @@ h3 {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: 0.3s linear;
 }
 
 *:focus {
@@ -480,7 +479,6 @@ h6 {
   font-size: 1.4rem;
   line-height: 1.14285714;
   color: #9597A5;
-  transition: 0.3s;
 }
 .header .sitenav__link:hover {
   color: #2D314D;
@@ -526,23 +524,21 @@ h6 {
     display: none;
   }
   .header .sitenav {
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    top: -120rem;
     left: 0;
-    right: 0;
-    top: 7rem;
-    bottom: 0;
+    width: 100%;
     padding: 2.4rem 2.4rem;
-    display: none;
+    opacity: 0;
+    transition: 1s;
   }
   .header .sitenav__list {
     background: #ffffff;
     padding: 3.2rem 0;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
     border-radius: 4px;
     gap: 2.4rem;
-    transition: all 0.3s;
   }
   .header .sitenav__link {
     padding: 0;
@@ -555,14 +551,14 @@ h6 {
   .header .header__toggle-btn {
     display: block;
   }
-}
-
-.sitenav.show-nav {
-  display: block;
-}
-
-.fa-times {
-  transform: rotate(180deg);
+  .header .sitenav.show-nav {
+    opacity: 1;
+    top: 7rem;
+  }
+  .header .fa-times {
+    transition: ease 0.3s;
+    transform: rotate(180deg);
+  }
 }
 
 .main {
