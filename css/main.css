@@ -530,7 +530,7 @@ h6 {
     width: 100%;
     padding: 2.4rem 2.4rem;
     opacity: 0;
-    transition: 1s;
+    transition: 0.4s;
   }
   .header .sitenav__list {
     background: #ffffff;
