@@ -175,6 +175,7 @@
     .services {
         padding-top: 9.6rem;
         padding-bottom: 9.4rem;
+        background-color: #F4F5F7;
     }
     .service-info {
         max-width: 635px;
@@ -262,4 +263,51 @@
         {
             max-width: 327px;
         }
+    }
+
+    // FEATURES
+    .features {
+        padding-top: 8rem;
+        padding-bottom: 10.4rem;
+        
+
+        h2
+        {
+            margin-bottom: 4rem;
+        }
+    }
+    .features__card {
+        display: flex;
+        gap: 3.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .features-box {
+        background-color: $light-white;
+        width: 255px;
+     h6
+     {
+        margin-bottom: 0.8rem;
+     }
+     h4
+     {
+        margin-bottom: 0.8rem;
+     }
+     p
+     {
+        font-size: 1.3rem;
+     }
+     .features-info
+     {
+        background-color: $light-white;
+        padding: 24px;
+     }
+    }
+    @include responsive (tablet)
+    {
+       h2
+       {
+           text-align: center;
+           font-size: 3.2rem;
+       }
     }

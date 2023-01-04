@@ -729,6 +729,7 @@ h6 {
 .services {
   padding-top: 9.6rem;
   padding-bottom: 9.4rem;
+  background-color: #F4F5F7;
 }
 
 .service-info {
@@ -798,5 +799,44 @@ h6 {
   }
   .services-box {
     max-width: 327px;
+  }
+}
+.features {
+  padding-top: 8rem;
+  padding-bottom: 10.4rem;
+}
+.features h2 {
+  margin-bottom: 4rem;
+}
+
+.features__card {
+  display: flex;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features-box {
+  background-color: #ffffff;
+  width: 255px;
+}
+.features-box h6 {
+  margin-bottom: 0.8rem;
+}
+.features-box h4 {
+  margin-bottom: 0.8rem;
+}
+.features-box p {
+  font-size: 1.3rem;
+}
+.features-box .features-info {
+  background-color: #ffffff;
+  padding: 24px;
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    text-align: center;
+    font-size: 3.2rem;
   }
 }/*# sourceMappingURL=main.css.map */
