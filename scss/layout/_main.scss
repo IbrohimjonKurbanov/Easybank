@@ -26,6 +26,10 @@
             @include title (1.8rem, -0.28px, 1.56, $text-color, normal);
             margin-bottom: 3.6rem;
         }
+        img
+        {
+            display: flex;
+        }
         .container
         {
             display: flex;
@@ -130,6 +134,7 @@
              }
              .info{
                 max-width: 100%;
+                text-align: center;
              }
              h1
              {
@@ -146,10 +151,11 @@
          {
             .hero
             {
-                padding: 12rem 0;
+                padding-top: 12rem;
     
                 .info
                 {
+                    text-align: center;
                 h1
                 {
                      font-size: 3.5rem;
@@ -185,8 +191,9 @@
     }
     .services__card {
         display: flex;
-        gap: 3rem;
+        gap: 3.5rem;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .services-box {
        max-width: 255px;
@@ -202,5 +209,52 @@
         p
         {
             @include title (1.6rem, 1.62, -0.25px, $text-color, 400);
+        }
+    }
+
+    @include responsive (tablet)
+    {
+        .service-info
+        {
+            text-align: center;
+        }
+        .services-box
+        {
+           text-align: center;
+           max-width: 250px;
+
+           img
+           {
+            margin-bottom: 1rem;
+           }
+           h3
+           {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+           }
+           p
+           {
+            font-size: 1.5rem;
+           }
+        }
+    }
+
+
+    @include responsive (mobile)
+    {
+        .service-info
+        {
+            h2
+            {
+                font-size: 3.2rem;
+            }
+            p
+            {
+                font-size: 1.5rem;
+            }
+        }
+        .services-box
+        {
+            max-width: 327px;
         }
     }
