@@ -1,5 +1,157 @@
-// MAiN
-.main
-{
-    flex-grow: 1;
-}
+    // MAiN
+    .main
+    {
+        flex-grow: 1;
+    }
+    // HERO
+    .hero
+    {
+        padding-top: 17rem;
+        padding-bottom: 17rem;
+        background-image: url('../images/hero-bg.svg');
+        background-repeat: no-repeat;
+        background-position: right -24px top -80px;
+        position: relative;
+
+        .info   
+        {
+            max-width: 447px;
+        }
+        h1
+        {
+            margin-bottom: 24px;
+        }
+        p
+        {
+            @include title (1.8rem, -0.28px, 1.56, $text-color, normal);
+            margin-bottom: 3.6rem;
+        }
+        .container
+        {
+            display: flex;
+        }
+        .hero__image
+        {
+            position: absolute;
+            right: 0;
+            top: -80px;
+            z-index: 0;
+        }
+        .hero__mobile
+        {
+            display: none;
+            position: relative; 
+            top: -190px;
+            width: 59rem;
+        }
+        .hero__tablet
+        {
+         display: none;
+        }
+        @include responsive (desktop)
+        {
+            padding: 9rem 0;
+             background-position: right -120px top -190px;
+             position: relative;
+             .hero__image
+             {
+                 position: absolute;
+                 right: -125px;
+                 top: -190px;
+             } 
+        }
+        @include responsive (desctop_2)
+        {
+             padding: 9rem 0;
+             background-position: right -300px top -190px;
+             position: relative;
+             .hero__image
+              {
+                 position: absolute;
+                 right: -217px;
+                 top: -160px;
+                 width: 550px;
+          }
+             .info
+            {
+                width: 400px;
+            }
+            h1
+            {
+                font-size: 4rem;
+            }
+            p
+            {
+                font-size: 1.7rem;
+            }
+        }
+        @include responsive (desctop_3)
+        {
+            background-position: right -40rem top -200px;
+            position: relative;
+            .hero__image
+            {
+                position: absolute;
+                right: -315px;
+                top: -155px;
+                width: 550px;
+            }
+            .info
+            {
+             max-width: 100%;
+            }
+            h1
+            {
+                font-size: 4.5rem;
+            }
+            p
+            {
+                font-size: 1.7rem;
+            }
+        } 
+         @include responsive (tablet)
+         {
+            background-image: url();
+            .hero__image
+            {
+                display: none;
+            }
+            .hero__tablet
+             {
+            display: none;
+             }
+             .container
+             {
+                justify-content: center;
+             }
+             .info{
+                max-width: 100%;
+             }
+             h1
+             {
+                 font-size: 4.2rem;
+                 margin-bottom: 2rem;
+             }
+             p
+             {
+                 font-size: 1.7rem;
+                 margin-bottom: 2.5rem;
+             }
+         }
+         @include responsive (mobile_2)
+         {
+            .info
+            {
+            h1
+            {
+                font-size: 3.5rem;
+                 margin-bottom: 1.7rem;
+            }
+            p
+            {
+                font-size: 1.497rem;
+                margin-bottom: 1.9rem;
+            }
+            }
+         }
+    }
