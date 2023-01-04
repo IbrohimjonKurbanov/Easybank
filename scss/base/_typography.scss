@@ -15,3 +15,11 @@ h3
 {
     @include title (2.4rem, 1.17, -0.428571px, $title-color, 100)
 }
+h4  
+{
+    @include title (1.6rem, 1.25, -0.285714px, $title-color, 100)
+}
+h6
+{
+    @include title (1rem, 18px, -0.15625px, $text-color, 400)
+}

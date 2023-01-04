@@ -242,6 +242,11 @@
 
     @include responsive (mobile)
     {
+       .services
+       {
+        padding-top: 0;
+        padding-bottom: 9rem;
+       }
         .service-info
         {
             h2

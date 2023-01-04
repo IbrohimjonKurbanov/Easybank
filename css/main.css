@@ -362,6 +362,22 @@ h3 {
   font-weight: 100;
 }
 
+h4 {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  letter-spacing: -0.285714px;
+  color: #2D314D;
+  font-weight: 100;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 18px;
+  letter-spacing: -0.15625px;
+  color: #9597A5;
+  font-weight: 400;
+}
+
 *, ::after, ::before {
   padding: 0;
   margin: 0;
@@ -770,6 +786,10 @@ h6 {
   }
 }
 @media screen and (max-width: 375px) {
+  .services {
+    padding-top: 0;
+    padding-bottom: 9rem;
+  }
   .service-info h2 {
     font-size: 3.2rem;
   }
