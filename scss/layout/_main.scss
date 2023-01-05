@@ -265,6 +265,13 @@
         }
     }
 
+    @include responsive (desktop_4)
+    {
+       .service-info
+       {
+        text-align: center;
+       }
+    }
     // FEATURES
     .features {
         padding-top: 8rem;
